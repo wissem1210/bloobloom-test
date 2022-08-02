@@ -276,7 +276,6 @@ span.filter {
   align-items: center;
   width: 100%;
   justify-content: flex-start;
-  padding-left: 40px;
   text-decoration: none;
   color: #000;
 }
@@ -298,7 +297,7 @@ img {
   height: 24px;
   margin: 11px 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #000;
@@ -327,6 +326,8 @@ img {
 }
 .shape-div {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .filter {
   display: flex;
