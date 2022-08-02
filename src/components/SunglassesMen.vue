@@ -332,6 +332,7 @@ img {
   display: flex;
   gap: 8px;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 15px;
