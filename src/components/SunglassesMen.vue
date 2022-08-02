@@ -241,11 +241,10 @@ export default {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
   justify-items: center;
   align-items: flex-start;
+  grid-template-columns: 33.33% 33.33% 33.33%;
 }
-
 .collection-item:nth-child(3n - 2) {
   border-left: none;
 }
@@ -270,12 +269,12 @@ span.filter {
 }
 .filter-list {
   border-bottom: 1px solid #000;
-  height: 40px;
-  display: flex;
+  min-height: 40px;
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
   align-items: center;
   width: 100%;
   justify-content: flex-start;
-  gap: 40px;
   padding-left: 40px;
   text-decoration: none;
   color: #000;
@@ -337,5 +336,27 @@ img {
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
+}
+.first {
+  display: auto;
+}
+@media screen and (max-width: 1319px) {
+  .collection-page {
+    grid-template-columns: 50% 50% !important;
+  }
+  .first {
+    display: none !important;
+  }
+  .collection-item:nth-child(3n - 2) {
+    border-left: 1px solid #000 !important;
+  }
+}
+@media screen and (max-width: 719px) {
+  .collection-page {
+    grid-template-columns: 100% !important;
+  }
+  .filter-list {
+    grid-template-columns: 33.33% 33.33% 33.33% !important;
+  }
 }
 </style>

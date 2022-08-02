@@ -343,21 +343,21 @@ img {
 }
 @media screen and (max-width: 1319px) {
   .collection-page {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50% !important;
   }
   .first {
-    display: none;
+    display: none !important;
   }
   .collection-item:nth-child(3n - 2) {
-    border-left: 1px solid #000;
+    border-left: 1px solid #000 !important;
   }
 }
 @media screen and (max-width: 719px) {
   .collection-page {
-    grid-template-columns: 100%;
+    grid-template-columns: 100% !important;
   }
   .filter-list {
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33.33% 33.33% 33.33% !important;
   }
 }
 </style>
