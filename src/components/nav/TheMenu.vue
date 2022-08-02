@@ -130,12 +130,12 @@ export default {
 }
 @media screen and (max-width: 1319px) {
   .menu {
-    width: 50%;
+    width: 50% !important;
   }
 }
 @media screen and (max-width: 500px) {
   .menu {
-    width: 100%;
+    width: 100% !important;
   }
 }
 </style>
