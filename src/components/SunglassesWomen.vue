@@ -1,7 +1,7 @@
 <template>
   <div class="collection-page" style="border: '1px solid #000'">
     <div class="collection-item first"></div>
-    <div class="collection-item collection-title">SUNGLASSES MEN</div>
+    <div class="collection-item collection-title">SUNGLASSES WOMEN</div>
     <div class="collection-item" style="justify-content: flex-start">
       <span class="filter" @click="colourFilter = !colourFilter">COLOUR</span
       ><span class="filter" @click="shapeFilter = !shapeFilter">SHAPE</span>
