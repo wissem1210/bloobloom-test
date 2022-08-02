@@ -123,7 +123,7 @@ export default {
     loadGlasses() {
       fetch(
         // eslint-disable-next-line
-        `https://api.bloobloom.com/user/v1/sales_channels/website/collections/sunglasses-men/glasses?sort\[type\]=collection_relations_position&sort\[order\]=asc&filters\[lens_variant_prescriptions\]\[\]=fashion&filters\[lens_variant_types\]\[\]=classic&page\[limit\]=12&page\[number\]=${this.page}&filters\[frame_variant_home_trial_available\]=false${this.queryUrl}`
+        `https://api.bloobloom.com/user/v1/sales_channels/website/collections/sunglasses-women/glasses?sort\[type\]=collection_relations_position&sort\[order\]=asc&filters\[lens_variant_prescriptions\]\[\]=fashion&filters\[lens_variant_types\]\[\]=classic&page\[limit\]=12&page\[number\]=${this.page}&filters\[frame_variant_home_trial_available\]=false${this.queryUrl}`
       ).then((response) => {
         if (response.ok) {
           response.json().then((data) => {
@@ -209,18 +209,18 @@ export default {
     collectionLink() {
       if (this.colour.length > 0 && this.shape.length > 0) {
         return (
-          "/sunglasses-men/" +
+          "/sunglasses-women/" +
           "?colour=" +
           this.colour.join("~") +
           "&shape=" +
           this.shape.join("~")
         );
       } else if (this.colour.length > 0) {
-        return "/sunglasses-men/" + "?colour=" + this.colour.join("~");
+        return "/sunglasses-women/" + "?colour=" + this.colour.join("~");
       } else if (this.shape.length > 0) {
-        return "/sunglasses-men/" + "?shape=" + this.shape.join("~");
+        return "/sunglasses-women/" + "?shape=" + this.shape.join("~");
       } else {
-        return "/sunglasses-men/";
+        return "/sunglasses-women/";
       }
     },
   },
