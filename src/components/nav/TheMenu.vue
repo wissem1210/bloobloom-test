@@ -38,6 +38,7 @@
             ? '/spectacles-women'
             : '/sunglasses-women'
         "
+        @click="passEvent"
       >
         <span>WOMEN</span>
       </router-link>
@@ -48,6 +49,7 @@
             ? '/spectacles-men'
             : '/sunglasses-men'
         "
+        @click="passEvent"
       >
         <span>MEN</span>
       </router-link>
@@ -70,6 +72,9 @@ export default {
   methods: {
     clear() {
       this.collectionType = "";
+    },
+    passEvent() {
+      this.$emit("closeMenu");
     },
   },
 };

@@ -31,7 +31,7 @@
     v-show="showMenu"
     @mouseover="showMenu = true"
     @mouseleave="showMenu = false"
-    @update-collection="updateCollectionName"
+    @close-menu="showMenu = false"
   />
 </template>
 
@@ -51,7 +51,6 @@ export default {
       showMenu: false,
     };
   },
-
   watch: {
     showMenu() {
       this.showMenu
